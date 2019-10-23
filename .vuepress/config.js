@@ -1,3 +1,17 @@
 module.exports = {
-  plugins: ["@vuepress/blog"]
+  plugins: [
+    [
+      "@vuepress/blog",
+      {
+        directories: [
+          {
+            id: "post",
+            dirname: "_posts",
+            path: "/posts/",
+            itemPermalink: "/posts/:slug"
+          }
+        ]
+      }
+    ]
+  ]
 };
