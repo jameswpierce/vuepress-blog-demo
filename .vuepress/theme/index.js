@@ -1,5 +1,8 @@
 module.exports = {
   extend: "@vuepress/theme-default",
+  themeConfig: {
+    nav: [{ text: "Home", link: "/" }, { text: "Blog", link: "/posts/" }]
+  },
   plugins: [
     [
       "@vuepress/blog",
